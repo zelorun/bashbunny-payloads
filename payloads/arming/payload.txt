@@ -21,7 +21,7 @@ LED SETUP
 
 GET SWITCH_POSITION
 
-ATTACKMODE STORAGE HID SERIAL
+ATTACKMODE STORAGE HID SERIAL vid_0x046a pid_0x002a
 
 
 # --------------------------------------------------------------------------------
