@@ -21,7 +21,7 @@ LED SETUP
 
 GET SWITCH_POSITION
 
-ATTACKMODE STORAGE HID vid_0x05ac pid_0x021e
+ATTACKMODE STORAGE HID
 
 
 # --------------------------------------------------------------------------------
@@ -35,9 +35,9 @@ if [ -e "$LOOTBASE/NOP.txt" ]; then
 	exit 0
 fi
 
-QUACK GUI SPACE
+QUACK ALT F2
 QUACK DELAY 250
-QUACK STRING Hello World.
+QUACK STRING bash -c \"touch /media/\$USER/BashBunny/loot/LINUX.txt\"
 QUACK DELAY 250
 QUACK ENTER
 
